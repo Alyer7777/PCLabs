@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href={{ asset('css/connect.css') }}>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="connect.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+{% block body %}
+
+<body>
+    <img class="img" src={{ asset('images/connect/PCLabs-Form.png') }} alt="">
+    <main class="main-container">
+        <header class="main-header">
+            <ul class="list">
+                <li class="back">
+                    <a href="../">Retour</a>
+                </li>
+                <button class="hideShow" onclick="connectBtn()">Connexion</button>
+                <button class="hideShow" onclick="signBtn()">Inscription</button>
+            </ul>
+        </header>
+        <form id="myForm" action="" method="post">
+            <div class="form-container" id="formContainer">
+                <div class="sign-connect" id="signConnect">
+                    <h2>Inscrivez-vous / Connectez-vous</h2>
+                    <img src={{ asset('images/Minimal-PC.png') }} alt="">
+                </div>
+                <div class="connect-container" id="sign">
+                    <span class="title">Inscription</span>
+                    <span id="error"></span>
+                    <div class="name-surname">
+                        <div class="names">
+                            <label for="name">Prénom</label>
+                            <input type="text" id="name">
+                        </div>
+                        <div class="names">
+                            <label for="name">Nom</label>
+                            <input type="text" id="surname">
+                        </div>
+                    </div>
+                    <div class="others">
+                        <label for="password">Email</label>
+                        <input type="text" id="email" placeholder="exemple@exemple.com/fr">
+                    </div>
+                    <div class="others">
+                        <label for="password" id="password">Mot de passe</label>
+                        <input type="text" placeholder="Saisissez un mot de passe avec un minimum de 8 caratères">
+                        <label for="password">Confirmez le mot de passe</label>
+                        <input type="text" id="confirmPassword">
+                    </div>
+                    <div class="button">
+                        <button type="submit">S'inscrire</button>
+                        <button type="reset">Effacer les champs</button>
+                    </div>
+                </div>
+                <div class="sign-container" id="connect">
+                    <span class="title">Connexion</span>
+                    <div class="others">
+                        <label for="password">Email</label>
+                        <input type="text" placeholder="exemple@exemple.com/fr">
+                    </div>
+                    <div class="others">
+                        <label for="password">Mot de passe</label>
+                        <input type="text" placeholder="Saisissez un mot de passe avec un minimum de 8 caratères">
+                        <label for="password">Confirmez le mot de passe</label>
+                        <input type="text">
+                    </div>
+                    <div class="button">
+                        <button type="submit">Se Connecter</button>
+                        <button type="reset">Effacer les champs</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </form>
+    </main>
+</body>
+
+{% endblock %}
+
+</html>
