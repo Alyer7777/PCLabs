@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href={{ asset('css/configure.css') }}>
+	</head>
+
+	{% block body %}
+
+		<body>
+			<video class="main-bg" autoplay muted loop id="bg-video">
+				<source src="video/bg.mp4" type="video/mp4">
+			</video>
+			<main class="main-container">
+				<header class="main-header">
+					<img src={{ asset('images/configure/PCLabs-Logo.png') }} alt="">
+					<a href="home" class="link-bg">PCLabs</a>
+					<a href="accueil" class="link-bg">Accueil</a>
+				</header>
+				<wrapper>
+					<div class="container">
+						<div class="sub-container">
+							<div class="img-bg">
+								<img src={{ asset('images/configure/pc-bureautique.png') }} alt="">
+							</div>
+							<div class="content">
+								<h3>PC Bureautique</h3>
+								<p>Un ordinateur dedié au traitement de texte et à la navigation web.
+								    Configurez un ordinateur selon vos besoins, petit ou grande taille, selon l'espace disponible.
+								</p>
+							</div>
+							<a class="configure" href="../bureautique/bureautique.html">Configurez</a>
+						</div>
+						<div class="sub-container">
+							<div class="img-bg">
+								<img src={{ asset('images/configure/pc-gamer.png') }} alt="">
+							</div>
+							<div class="content">
+								<h3>PC Gamer</h3>
+								<p>Spécialement pour les joueurs, occasionnels ou habituels, crée votre idéal selon votre
+									utilisation pour un confort sans limites.
+								</p>
+							</div>
+							<a class="configure" href="">Configurez</a>
+						</div>
+						<div class="sub-container">
+							<div class="img-bg">
+								<img src={{ asset('images/configure/pc-server.png') }} alt="">
+							</div>
+							<div class="content">
+								<h3>PC Serveur</h3>
+								<p>Un ordinateur conçu pour le calcul, les taches intensives et les logiciels 3D.
+									Configurez un server selon vos préférences et votre utilisation, que ce soit sous Windows ou
+									Linux.
+								</p>
+							</div>
+							<a class="configure" href="">Configurez</a>
+						</div>
+					</div>
+				</wrapper>
+			</main>
+		</body>
+
+	{% endblock %}
+
+</html>
