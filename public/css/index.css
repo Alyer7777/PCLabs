@@ -1,11 +1,11 @@
 @font-face {
     font-family: Atma;
-    src: url(font/Atma-Regular.ttf);
+    src: url(../../assets/styles/fonts/Atma-Regular.ttf);
 }
 
 @font-face {
     font-family: TradeWinds;
-    src: url(font/TradeWinds-Regular.ttf);
+    src: url(../../assets/styles/fonts/TradeWinds-Regular.ttf);
 }
 
 * {
