@@ -1,20 +1,52 @@
 <!DOCTYPE html>
+<html lang="fr">
 
-<title>Hello HomeController!</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PcLabs</title>
+		<link rel="stylesheet" href="index.css">
+		<link
+		rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+	 <script src="index.js" defer></script>
+	</head>
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	{% block body %}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+		<img class="main-bg" src="images/PCLabs-Bg.png" alt="">
+		<main class="main-container">
+			<header class="main-header">
+				<img src="images/PCLabs-Logo.png" alt="">
+				<a href="configure/accueil/configure.html" class="header-title-bg">Configurateur</a>
+				<h2 class="header-title">Contact</h2>
+				<a href="connect/connect.html" class="header-title">Compte</a>
+				<h2 class="header-title">Forum</h2>
+			</header>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>C:/Users/alyer/Documents/01 - Back-end/Symfony/Webapp/myFirstApp/src/Controller/HomeController.php</code></li>
-        <li>Your template at <code>C:/Users/alyer/Documents/01 - Back-end/Symfony/Webapp/myFirstApp/templates/home/index.html.twig</code></li>
-    </ul>
-</div>
+			<div class="container">
+				<div class="left">
+					<h1 class="main-title">PCLabs</h1>
+					<p>Votre site technologie et innovations</p>
+					<button class="access" type="button">
+						<a href="Accueil/accueil.html">Accéder au site</a>
+						<i class="fa-solid fa-arrow-right"></i>
+					</button>
+				</div>
+				<div class="right">
+					<img src="images/PCLabs-Home.png" alt="">
+				</div>
+			</div>
+
+			<footer class="main-footer">
+				<div class="rights">
+					<p>Copyright 2024 - www.PCLabs.fr</p>
+					<p>Tout droits réservés</p>
+				</div>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-facebook-messenger"></i>
+				<i class="fa-brands fa-square-instagram"></i>
+			</footer>
+		</main>
+
+	</html>
 {% endblock %}
