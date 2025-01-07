@@ -8,12 +8,10 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class FirstPageController extends AbstractController
 {
-    #[Route('/first/page', name: 'app_first_page')]
+    #[Route('/firstPage/first', )]
     public function index(): JsonResponse
     {
-        return $this->json([
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/FirstPageController.php',
+        return $this->render('firstPage/first.html.twig', [
         ]);
     }
 }
