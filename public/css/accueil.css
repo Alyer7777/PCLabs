@@ -39,11 +39,11 @@ body {
     }
 
     35% {
-        transform: perspective(500px) translateZ(415px) translateY(100px) translateX(-30px);
+        transform: perspective(500px) translateZ(450px) translateY(50px);
     }
 
     to {
-        transform: perspective(500px) translateZ(415px) translateY(100px) translateX(-30px);;
+        transform: perspective(500px) translateZ(450px) translateY(50px);
     }
 }
 
@@ -89,7 +89,7 @@ body {
 }
 
 .pclabs h1 {
-    color: grey;
+    color: black;
     font-family: TradeWinds;
     font-size: 3em;
 }
@@ -147,11 +147,12 @@ body {
 
 .immersive h2 {
     font-size: 2.5em;
-    color: rgb(224, 223, 223);
+    color: black;
 }
 
 .arrows {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 25px;
     font-size: 1.2em;
@@ -159,13 +160,14 @@ body {
 
 .arrow-icons {
     height: 120vh;
+    color: black;
     animation: arrow 300ms linear;
     animation-timeline: view();
 }
 
 .arrow-icons p {
     font-size: 1.5em;
-    color: rgb(224, 223, 223);
+    color: black;
 }
 
 @keyframes arrow {
