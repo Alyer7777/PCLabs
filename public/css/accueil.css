@@ -89,6 +89,7 @@ body {
 }
 
 .pclabs h1 {
+    color: grey;
     font-family: TradeWinds;
     font-size: 3em;
 }
@@ -106,7 +107,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(224, 223, 223);
+    color: black;
     width: 40%;
     height: 70vh;
 }
@@ -116,7 +117,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(224, 223, 223);
+    color: black;
     width: 40%;
     height: 70vh;
     animation: immersive 300ms linear;
