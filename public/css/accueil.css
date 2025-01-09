@@ -12,6 +12,22 @@
     font-family: ComicNeue;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: grey;
+}
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -73,7 +89,7 @@ body {
 }
 
 .bg-link {
-    background-color: rgb(224, 223, 223);
+    background-color: lightgray;
     color: black;
     font-size: 1.5em;
     padding: 10px 15px;
@@ -109,7 +125,7 @@ body {
     align-items: center;
     color: black;
     width: 40%;
-    height: 70vh;
+    height: 80vh;
 }
 
 .pclabs-text {
@@ -123,7 +139,7 @@ body {
     align-items: center;
     color: black;
     width: 40%;
-    height: 70vh;
+    height: 80vh;
     animation: immersive 300ms linear;
     animation-timeline: view();
 }
@@ -233,7 +249,6 @@ body {
     from{
        opacity: 0.2;
        scale: 0.55;
-       transform: translateX(160px);
     }
 
     to {
