@@ -1,6 +1,6 @@
 @font-face {
-    font-family: Atma;
-    src: url('../fonts/Atma-Regular.ttf');
+    font-family: ComicNeue;
+    src: url('../fonts/ComicNeue-Regular.ttf');
 }
 
 @font-face {
@@ -9,7 +9,7 @@
 }
 
 * {
-    font-family: Atma;
+    font-family: ComicNeue;
 }
 
 body {
