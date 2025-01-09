@@ -11,7 +11,8 @@
           "animation-timeline: view()",
           "animation-timeline: scroll(y)",
           "animation-range",
-          "animation-timeline: scroll()"
+          "animation-timeline: scroll()",
+          "backdrop-filter"
         ]
       }
     ]
