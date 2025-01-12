@@ -283,3 +283,12 @@ body {
     }
     
 }
+@media screen and (max-width: 700px) {
+
+    .main-bg {
+        object-fit: cover;
+        aspect-ratio: 9/18;
+        transform: translateY(-200px);
+    }
+    
+}
