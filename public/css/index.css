@@ -153,14 +153,18 @@ body {
     font-size: 1.4em;
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+
+    .main-container {
+        width: 50%;
+    }
 
     .main-bg {
         width: 150%;
     }
 
     .container {
-        width: 50%;
+        display: block;
     }
     
 }
