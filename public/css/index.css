@@ -152,3 +152,15 @@ body {
 .main-footer i {
     font-size: 1.4em;
 }
+
+@media only screen and (max-width: 1000px) {
+
+    .main-bg {
+        width: 150%;
+    }
+
+    .container {
+        width: 50%;
+    }
+    
+}
